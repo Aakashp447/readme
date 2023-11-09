@@ -1,13 +1,13 @@
 # readme
-![image](https://github.com/Aakashp447/readme/assets/92420490/80e7576e-bcdc-41cd-aab1-78088f5ddb10)
+![image](https://github.com/Aakashp447/readme/assets/92420490/74d8646f-bd6c-4edb-8d5f-95d45fb317a7)
 
-- As shown in image, we are going to create a new microservice named http-api-print-ready-srv. It will take input from FE and creates document into jig collection like batches collection.
-- After creating jig document event-print-ready will use that document and starts the actual process of creating jigs of ai files and png or pdf files.
-- After this, printer user will get to notify about jig process. (It will include later)
-- In this, event-print-ready will work totally in background due to it is a lengthy process.
+- As shown in the image, we are going to create a new microservice named http-api-print-ready-srv. It will take input from FE and creates document into a jig collection like the collection named batches.
+- After creating jig document event-print-ready will use that document and starts the actual process of creating jigs of ai files and png or PDF files in the proper needed format.
+- After this, the printer user will get notified about the jig process. (It will be included later)
+- In this, event-print-ready will work totally in the background due to it being a lengthy process.
 
-*Doubt*
-- For displaying cards into printer MAT portal we will use API or direct FE call to db.
+*Doubts to discuss*
+- For displaying cards into the printer MAT portal we will use API or direct FE call to db.
   If we are using API then this API will come under which service. (newly created http-api-print-ready-srv ?)
-- All the APIs related to display jig status or information will come under newly created service named http-api-print-ready-srv, right ?
-- We need to decide collection document architecture and need to provide limit because if very big document (having more than 1.04 mb size) came than it can violate document size limit for querying database.
+- All the APIs related to displaying jig status or information will come under newly created service named http-api-print-ready-srv, right?
+- We need to decide on collection document architecture and provide a limit because if a very big document (having more than 1.04 MB size) comes then it can violate the document size limit for querying the database.
